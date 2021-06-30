@@ -11,6 +11,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderServiceImpl implements OrderService{
 
+    // final은 필드 자체에서 초기값을 넣어주거나
+    // 생성자에서만 넣어줄 수 있다.
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
